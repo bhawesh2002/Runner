@@ -11,8 +11,9 @@ White =( 255,255,255)
 window = pygame.display.set_mode((width,height))
 right_g = pygame.image.load(os.path.join('Assets','tiles','1.png'))
 while True:
-    window.blit(right_g,(100,100))
+    pygame.display.update()
     window.fill(Black)
+    window.blit(right_g,(500,500))
     for event in pygame.event.get():
         if (event.type == QUIT or (event.type == KEYDOWN and event.key == K_q)):
             pygame.quit()
