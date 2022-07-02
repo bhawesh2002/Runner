@@ -9,3 +9,6 @@ width,height = 800,600
 Black = (0,0,0)
 White =( 255,255,255)
 window = pygame.display.set_mode((width,height))
+
+while True:
+    window.fill(Black)
