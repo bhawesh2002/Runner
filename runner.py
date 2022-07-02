@@ -22,3 +22,4 @@ while True:
         window.blit(ground,(x_pos,500))
         x_pos += dimensions.width
         pygame.display.update()
+    x_pos = 0
