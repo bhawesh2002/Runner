@@ -10,6 +10,7 @@ Black = (0,0,0)
 White =(255,255,255)
 window = pygame.display.set_mode((width,height))
 ground = pygame.image.load(os.path.join('Assets','tiles','2.png'))
+print(ground.get_rect())
 while True:
     pygame.display.update()
     window.fill(Black)
