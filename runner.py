@@ -6,13 +6,13 @@ from pygame.locals import *
 
 pygame.init()
 
-width,height = 800,600
-Black = (0,0,0)
-White =(255,255,255)
-window = pygame.display.set_mode((width,height))
-ground = pygame.image.load(os.path.join('Assets','tiles','2.png'))
-r_ground = pygame.image.load(os.path.join('Assets','tiles','1.png'))
-l_ground = pygame.image.load(os.path.join('Assets','tiles','3.png'))
+width, height = 800, 600
+Black = (0, 0, 0)
+White = (255, 255, 255)
+window = pygame.display.set_mode((width, height))
+ground = pygame.image.load(os.path.join('Assets', 'tiles', '2.png'))
+r_ground = pygame.image.load(os.path.join('Assets', 'tiles', '1.png'))
+l_ground = pygame.image.load(os.path.join('Assets', 'tiles', '3.png'))
 pixels = 128
 x_pos = 0
 while True:
@@ -22,10 +22,7 @@ while True:
             pygame.quit()
             sys.exit()
     while(x_pos < 800):
-        window.blit(ground,(x_pos,500))
+        window.blit(ground, (x_pos, 500))
         x_pos += pixels
-        if(x_pos >= (width/2)-pixels and x_pos <= width -(pixels*2)):
-            if(x_pos == (width/2)-pixels):
-                window.blit(r_ground,(x_pos,y_pos_r))
         pygame.display.update()
     x_pos = 0
