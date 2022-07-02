@@ -1,5 +1,6 @@
 import sys
 import os
+from pkg_resources import FileMetadata
 import pygame
 from pygame.locals import *
 
@@ -10,7 +11,8 @@ Black = (0,0,0)
 White =(255,255,255)
 window = pygame.display.set_mode((width,height))
 ground = pygame.image.load(os.path.join('Assets','tiles','2.png'))
-dimensions = ground.get_rect()
+r_ground = pygame.image.load(os.path.join('Assets','tiles','1.png'))
+pixels = 128
 x_pos = 0
 while True:
     pygame.display.update()
@@ -20,6 +22,6 @@ while True:
             sys.exit()
     while(x_pos < 800):
         window.blit(ground,(x_pos,500))
-        x_pos += dimensions.width
+        x_pos += pixels
         pygame.display.update()
     x_pos = 0
