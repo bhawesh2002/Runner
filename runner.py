@@ -10,12 +10,15 @@ Black = (0,0,0)
 White =(255,255,255)
 window = pygame.display.set_mode((width,height))
 ground = pygame.image.load(os.path.join('Assets','tiles','2.png'))
-print(ground.get_rect())
+dimensions = ground.get_rect()
+x_pos = 0
 while True:
     pygame.display.update()
-    window.fill(Black)
-    window.blit(ground,(0,500))
     for event in pygame.event.get():
         if (event.type == QUIT or (event.type == KEYDOWN and event.key == K_q)):
             pygame.quit()
             sys.exit()
+    while(x_pos < 800):
+        window.blit(ground,(x_pos,500))
+        x_pos += dimensions.width
+        pygame.display.update()
