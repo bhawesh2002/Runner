@@ -1,6 +1,5 @@
 import sys
 import os
-from pkg_resources import FileMetadata
 import pygame
 from pygame.locals import *
 
