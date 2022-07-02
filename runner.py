@@ -12,3 +12,7 @@ window = pygame.display.set_mode((width,height))
 
 while True:
     window.fill(Black)
+    for event in pygame.event.get():
+        if event.type == QUIT or (pygame.type == KEYDOWN and event.key == K_q):
+            pygame.quit()
+            sys.exit()
