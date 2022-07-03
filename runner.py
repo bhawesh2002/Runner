@@ -12,6 +12,7 @@ window = pygame.display.set_mode((width, height))
 ground = pygame.image.load(os.path.join('Assets', 'tiles', '2.png'))
 r_ground = pygame.image.load(os.path.join('Assets', 'tiles', '1.png'))
 l_ground = pygame.image.load(os.path.join('Assets', 'tiles', '3.png'))
+mud = pygame.image.load(os.path.join('Assets','tiles','5.png'))
 pixels = 128
 x_pos = 0
 while True:
