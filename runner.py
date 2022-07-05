@@ -14,6 +14,7 @@ r_ground = pygame.image.load(os.path.join('Assets', 'tiles', '1.png'))
 l_ground = pygame.image.load(os.path.join('Assets', 'tiles', '3.png'))
 mud = pygame.image.load(os.path.join('Assets','tiles','5.png'))
 grass = pygame.image.load(os.path.join('Assets','tiles','7.png'))
+chris = pygame.image.load(os.path.join('Assets','character','chris standing.png'))
 pixels = 128
 x_pos = 0
 while True:
