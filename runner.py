@@ -15,12 +15,12 @@ l_ground = pygame.image.load(os.path.join('Assets', 'tiles', '3.png'))
 mud = pygame.image.load(os.path.join('Assets','tiles','5.png'))
 grass = pygame.image.load(os.path.join('Assets','tiles','7.png'))
 chris = pygame.image.load(os.path.join('Assets','character','chris standing.png'))
-chris_scaled = pygame.transform.scale(chris,(60,100))
+chris_scaled = pygame.transform.scale(chris,(70,110))
 pixels = 128
 x_pos = 0
 while True:
     pygame.display.update()
-    window.blit(chris_scaled,(150,400))
+    window.blit(chris_scaled,(150,390))
     for event in pygame.event.get():
         if (event.type == QUIT or (event.type == KEYDOWN and event.key == K_q)):
             pygame.quit()
