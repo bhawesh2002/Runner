@@ -19,7 +19,7 @@ pixels = 128
 x_pos = 0
 while True:
     pygame.display.update()
-    window.blit(chris,(600,0))
+    window.blit(chris,(150,320))
     for event in pygame.event.get():
         if (event.type == QUIT or (event.type == KEYDOWN and event.key == K_q)):
             pygame.quit()
